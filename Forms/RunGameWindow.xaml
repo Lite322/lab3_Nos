@@ -1,0 +1,53 @@
+﻿<Window x:Class="lab3_Nos.Forms.RunGameWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:lab3_Nos.Forms"
+        mc:Ignorable="d"
+        Title="Загрузка игры" Height="450" Width="800">
+    <Grid>
+        <ScrollViewer>
+            <StackPanel Margin="16">
+                <DataGrid Margin="5" Background="Red" MinHeight="100" Name="dgListGame">
+                    <DataGrid.Columns>
+                        <DataGridTextColumn x:Name="dgtcGamerId" Header="id" Binding="{Binding GamerId}"/>
+                        <DataGridTextColumn x:Name="dgtcGamerName" Header="Имя" Binding="{Binding Gamer.Name}"/>
+                        <DataGridTextColumn x:Name="dgtcGamerAge" Header="Возраст" Binding="{Binding Age}"/>
+                        <DataGridTextColumn x:Name="dgtcGamerGender" Header="Пол" Binding="{Binding Gender}"/>
+                        <DataGridTextColumn x:Name="dgtcGamerSatiety" Header="Сытость" Binding="{Binding Satiety}"/>
+                        <DataGridTextColumn x:Name="dgtcGamerFatigue" Header="Усталость" Binding="{Binding Fatigue}"/>
+                        <DataGridTextColumn x:Name="dgtcGamerMoney" Header="Деньги" Binding="{Binding Money}"/>
+                        <DataGridTextColumn x:Name="dgtcGamerDay" Header="Дней прожито" Binding="{Binding Day}"/>
+                    </DataGrid.Columns>
+                </DataGrid>
+
+                <DataGrid Margin="5" Background="Red" MinHeight="100" Name="dgListGuitar">
+                    <DataGrid.Columns>
+                        <DataGridTextColumn x:Name="dgtcGuitarId" Header="id" Binding="{Binding GuitarId}"/>
+                        <DataGridTextColumn x:Name="dgtcGuitarNeck" Header="Гриф" Binding="{Binding Neck}"/>
+                        <DataGridTextColumn x:Name="dgtcGuitarPegs" Header="Колки" Binding="{Binding Pegs}"/>
+                        <DataGridTextColumn x:Name="dgtcGuitarStrings" Header="Струны" Binding="{Binding Strings}"/>
+                        <DataGridTextColumn x:Name="dgtcGuitarVocalist" Header="Голосник" Binding="{Binding Vocalist}"/>
+                        <DataGridTextColumn x:Name="dgtcGuitarBody" Header="Корпус" Binding="{Binding Body}"/>
+                        <DataGridTextColumn x:Name="dgtcGuitarFrets" Header="Лады" Binding="{Binding Frets}"/>
+                        <DataGridTextColumn x:Name="dgtcGuitarBridge" Header="Бридж" Binding="{Binding Bridge}"/>
+                        <DataGridTextColumn x:Name="dgtcGuitarSelector" Header="Селектор" Binding="{Binding Selector}"/>
+                    </DataGrid.Columns>
+                </DataGrid>
+
+                <DataGrid Margin="5" Background="Red" MinHeight="100" Name="dgListWork">
+                    <DataGrid.Columns>
+                        <DataGridTextColumn x:Name="dgtcWorkId" Header="id" Binding="{Binding WorkId}"/>
+                        <DataGridTextColumn x:Name="dgtcWorkName" Header="Работа" Binding="{Binding Work.Name}"/>
+                        <DataGridTextColumn x:Name="dgtcWorkWages" Header="Зарплата" Binding="{Binding Wages}"/>
+                        <DataGridTextColumn x:Name="dgtcWorkMinqualifications" Header="Нужный опыт" Binding="{Binding Minqualifications}"/>
+                        <DataGridTextColumn x:Name="dgtcWorkExperience" Header="Опыт" Binding="{Binding Experience}" />
+                        <DataGridTextColumn x:Name="dgtcWorkUpExperience" Header="Получаемый опыт" Binding="{Binding UpExperience}"/>
+                    </DataGrid.Columns>
+                </DataGrid>
+                <Button x:Name="btRunGame" Click="btRunGame_Click">Загрузить игру</Button>
+            </StackPanel>
+        </ScrollViewer>
+    </Grid>
+</Window>

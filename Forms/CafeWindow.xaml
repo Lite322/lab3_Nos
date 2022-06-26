@@ -1,0 +1,61 @@
+﻿<Window x:Class="lab3_Nos.Forms.CafeWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:lab3_Nos.Forms"
+        mc:Ignorable="d"
+        Title="Столовая" Height="450" Width="800">
+    <Window.Resources>
+        <Style TargetType="TextBlock">
+            <Setter Property="Foreground" Value="Red"/>
+            <Setter Property="Margin" Value="5"/>
+            <Setter Property="HorizontalAlignment" Value="Center"/>
+        </Style>
+    </Window.Resources>
+    
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="10*"/>
+            <RowDefinition Height="1*"/>
+        </Grid.RowDefinitions>
+
+        <Grid Grid.Column="1" Grid.Row="1">
+            <StackPanel Margin="5" VerticalAlignment="Center">
+                <Button x:Name="btExit" Click="btExit_Click">Выйти</Button>
+            </StackPanel>
+        </Grid>
+
+        <Grid Grid.Column="0" Grid.Row="0">
+            <StackPanel Margin="16" VerticalAlignment="Center">
+                <TextBlock>Легкий перекус</TextBlock>
+                <TextBlock>Цена: 10 руб. (сытость +10)</TextBlock>
+                <Image Height="150" Width="210" Source="pack://application:,,,/images/Лп.jpg"/>
+                <Button x:Name="btLightEat" Click="btLightEat_Click">Купить</Button>
+            </StackPanel>
+        </Grid>
+
+        <Grid Grid.Column="1" Grid.Row="0">
+            <StackPanel VerticalAlignment="Center" Margin="16">
+                <TextBlock>Средний перекус</TextBlock>
+                <TextBlock>Цена: 25 руб. (сытость +25)</TextBlock>
+                <Image Height="150" Width="210" Source="pack://application:,,,/images/Сп.jpg"/>
+                <Button x:Name="btMiddleEat" Click="btMiddleEat_Click">Купить</Button>
+            </StackPanel>
+        </Grid>
+
+        <Grid Grid.Column="2" Grid.Row="0">
+            <StackPanel Margin="16" VerticalAlignment="Center">
+                <TextBlock>Хороший перекус</TextBlock>
+                <TextBlock>Цена: 50 руб. (сытость +50)</TextBlock>
+                <Image Height="150" Width="210" Source="pack://application:,,,/images/Хп.jpg"/>
+                <Button x:Name="btGoodEat" Click="btGoodEat_Click">Купить</Button>
+            </StackPanel>
+        </Grid>
+    </Grid>
+</Window>
