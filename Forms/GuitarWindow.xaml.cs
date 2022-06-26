@@ -228,7 +228,7 @@ namespace lab3_Nos.Forms
             Close();
         }
 
-        private void btFillLog_Click(object sender, RoutedEventArgs e)
+        private void btTune_Click(object sender, RoutedEventArgs e)
         {
             App.myGamer.Fatigue += 25;
             App.myWork.Experience += 10;
@@ -275,7 +275,7 @@ namespace lab3_Nos.Forms
             }
         }
 
-        private void btReadBook_Click(object sender, RoutedEventArgs e)
+        private void btClean_Click(object sender, RoutedEventArgs e)
         {
             App.myGamer.Fatigue += 50;
             App.myWork.Experience += 25;
@@ -322,7 +322,7 @@ namespace lab3_Nos.Forms
             }
         }
 
-        private void btLearnConcepts_Click(object sender, RoutedEventArgs e)
+        private void btCheck_Click(object sender, RoutedEventArgs e)
         {
             App.myGamer.Fatigue += 75;
             App.myWork.Experience += 50;
