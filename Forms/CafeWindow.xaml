@@ -5,10 +5,11 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:lab3_Nos.Forms"
         mc:Ignorable="d"
-        Title="Столовая" Height="450" Width="800">
+        Title="Столовая" Height="450" Width="800"
+        Background="#421d63">
     <Window.Resources>
         <Style TargetType="TextBlock">
-            <Setter Property="Foreground" Value="Red"/>
+            <Setter Property="Foreground" Value="#db768c"/>
             <Setter Property="Margin" Value="5"/>
             <Setter Property="HorizontalAlignment" Value="Center"/>
         </Style>

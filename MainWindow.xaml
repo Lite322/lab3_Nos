@@ -5,12 +5,13 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:lab3_Nos"
         mc:Ignorable="d"
-        Title="Симулятор гитариста" Height="450" Width="800">
+        Title="Симулятор гитариста" Height="450" Width="800"
+        Background="#421d63">
     <Window.Resources>
         <Style TargetType="Button">
             <Setter Property="Margin" Value="20"/>
             <Setter Property="Height" Value="50"/>
-            <Setter Property="Background" Value="Red"/>
+            <Setter Property="Background" Value="#db768c"/>
         </Style>
     </Window.Resources>
 

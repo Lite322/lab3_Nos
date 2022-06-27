@@ -5,7 +5,8 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:lab3_Nos.Forms"
         mc:Ignorable="d"
-        Title="Симулятор гитариста" Height="450" Width="800">
+        Title="Симулятор гитариста" Height="450" Width="800"
+        Background="#421d63">
     <Grid>
         <Grid>
             <Grid.ColumnDefinitions>
@@ -23,10 +24,10 @@
                 <Grid x:Name="gridInfoGamer" Grid.Row="0">
 
                     <StackPanel>
-                        <TextBlock Foreground="Red" HorizontalAlignment="Center">Игрок</TextBlock>
+                        <TextBlock Foreground="#db768c" HorizontalAlignment="Center">Игрок</TextBlock>
                     </StackPanel>
 
-                    <StackPanel Background="Red" Margin="16">
+                    <StackPanel Background="#db768c" Margin="16">
                         <StackPanel Orientation="Horizontal">
                             <TextBlock Text="Имя: " Margin="5"/>
                             <TextBlock Margin="5" Text="{Binding Name}"/>
@@ -69,10 +70,10 @@
 
                 <Grid x:Name="gridInfoWork" Grid.Row="1">
                     <StackPanel>
-                        <TextBlock Foreground="Red" HorizontalAlignment="Center">Работа</TextBlock>
+                        <TextBlock Foreground="#db768c" HorizontalAlignment="Center">Работа</TextBlock>
                     </StackPanel>
 
-                    <StackPanel  Orientation="Horizontal" Background="Red" Margin="16">
+                    <StackPanel  Orientation="Horizontal" Background="#db768c" Margin="16">
                         <StackPanel>
                             <StackPanel Orientation="Horizontal">
                                 <TextBlock Text="Название: " Margin="5"/>
@@ -103,10 +104,10 @@
 
             <Grid  x:Name="gridGuitarInfo" Grid.Column="1" Grid.Row="0">
                 <StackPanel>
-                    <TextBlock Foreground="Red" HorizontalAlignment="Center">Инструменты</TextBlock>
+                    <TextBlock Foreground="#db768c" HorizontalAlignment="Center">Инструменты</TextBlock>
                 </StackPanel>
 
-                <StackPanel  Background="Red" Margin="20">
+                <StackPanel  Background="#db768c" Margin="20">
                     <StackPanel Orientation="Horizontal">
                         <TextBlock Text="Гриф:" Margin="5"/>
                         <TextBlock Margin="5" Text="{Binding Neck}"/>

@@ -5,7 +5,8 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:lab3_Nos.Forms"
         mc:Ignorable="d"
-        Title="Обучение" Height="450" Width="800">
+        Title="Обучение" Height="450" Width="800"
+        Background="#421d63">
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition/>
@@ -13,8 +14,8 @@
             <ColumnDefinition/>
         </Grid.ColumnDefinitions>
         <Grid.RowDefinitions>
-            <RowDefinition Height="1*"/>
             <RowDefinition Height="10*"/>
+            <RowDefinition Height="1*"/>
         </Grid.RowDefinitions>
 
         <Grid Grid.Row="1" Grid.Column="1">
@@ -25,17 +26,17 @@
 
         <Grid Grid.Column="0" Grid.Row="0">
             <StackPanel VerticalAlignment="Center">
-                <TextBlock Margin="5" Foreground="Red" HorizontalAlignment="Center">Изучить табы</TextBlock>
-                <TextBlock Margin="5" Foreground="Red" HorizontalAlignment="Center">(опыт +10, усталость +10, цена: бесплатно)</TextBlock>
-                <Image Height="200" Width="150" Source="pack://application:,,,/images/Учебники.jpg"/>
+                <TextBlock Margin="5" Foreground="#db768c" HorizontalAlignment="Center">Изучить табы</TextBlock>
+                <TextBlock Margin="5" Foreground="#db768c" HorizontalAlignment="Center">(опыт +10, усталость +10, цена: бесплатно)</TextBlock>
+                <Image Height="200" Width="150" Source="pack://application:,,,/images/Табы.jpg"/>
                 <Button x:Name="btLearnTabs" Click="btLearnTabs_Click">Изучить</Button>
             </StackPanel>
         </Grid>
 
         <Grid Grid.Column="1" Grid.Row="0">
             <StackPanel VerticalAlignment="Center">
-                <TextBlock Margin="5" Foreground="Red" HorizontalAlignment="Center">Слушать онлайн лекцию</TextBlock>
-                <TextBlock Margin="5" Foreground="Red" HorizontalAlignment="Center">(опыт +20, усталость +20, цена: 200 руб.)</TextBlock>
+                <TextBlock Margin="5" Foreground="#db768c" HorizontalAlignment="Center">Слушать онлайн лекцию</TextBlock>
+                <TextBlock Margin="5" Foreground="#db768c" HorizontalAlignment="Center">(опыт +20, усталость +20, цена: 200 руб.)</TextBlock>
                 <Image Height="200" Width="150" Source="pack://application:,,,/images/Лекция.jpg"/>
                 <Button x:Name="btListenLecture" Click="btListenLecture_Click">Слушать</Button>
             </StackPanel>
@@ -43,8 +44,8 @@
 
         <Grid Grid.Column="2" Grid.Row="0">
             <StackPanel VerticalAlignment="Center">
-                <TextBlock Margin="5" Foreground="Red" HorizontalAlignment="Center">Практика в музыкальной школе</TextBlock>
-                <TextBlock Margin="5" Foreground="Red" HorizontalAlignment="Center">(опыт +30, усталость +30, цена: 500 руб.)</TextBlock>
+                <TextBlock Margin="5" Foreground="#db768c" HorizontalAlignment="Center">Практика в музыкальной школе</TextBlock>
+                <TextBlock Margin="5" Foreground="#db768c" HorizontalAlignment="Center">(опыт +30, усталость +30, цена: 500 руб.)</TextBlock>
                 <Image Height="200" Width="150" Source="pack://application:,,,/images/Практика.jpg"/>
                 <Button x:Name="btPractice" Click="btPractice_Click">Пройти</Button>
             </StackPanel>

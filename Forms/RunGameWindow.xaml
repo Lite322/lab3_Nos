@@ -5,11 +5,12 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:lab3_Nos.Forms"
         mc:Ignorable="d"
-        Title="Загрузка игры" Height="450" Width="800">
+        Title="Загрузка игры" Height="450" Width="800"
+        Background="#421d63">
     <Grid>
         <ScrollViewer>
             <StackPanel Margin="16">
-                <DataGrid Margin="5" Background="Red" MinHeight="100" Name="dgListGame">
+                <DataGrid Margin="5" Background="#db768c" MinHeight="100" Name="dgListGame">
                     <DataGrid.Columns>
                         <DataGridTextColumn x:Name="dgtcGamerId" Header="id" Binding="{Binding GamerId}"/>
                         <DataGridTextColumn x:Name="dgtcGamerName" Header="Имя" Binding="{Binding Gamer.Name}"/>
@@ -22,7 +23,7 @@
                     </DataGrid.Columns>
                 </DataGrid>
 
-                <DataGrid Margin="5" Background="Red" MinHeight="100" Name="dgListGuitar">
+                <DataGrid Margin="5" Background="#db768c" MinHeight="100" Name="dgListGuitar">
                     <DataGrid.Columns>
                         <DataGridTextColumn x:Name="dgtcGuitarId" Header="id" Binding="{Binding GuitarId}"/>
                         <DataGridTextColumn x:Name="dgtcGuitarNeck" Header="Гриф" Binding="{Binding Neck}"/>
@@ -36,7 +37,7 @@
                     </DataGrid.Columns>
                 </DataGrid>
 
-                <DataGrid Margin="5" Background="Red" MinHeight="100" Name="dgListWork">
+                <DataGrid Margin="5" Background="#db768c" MinHeight="100" Name="dgListWork">
                     <DataGrid.Columns>
                         <DataGridTextColumn x:Name="dgtcWorkId" Header="id" Binding="{Binding WorkId}"/>
                         <DataGridTextColumn x:Name="dgtcWorkName" Header="Работа" Binding="{Binding Work.Name}"/>

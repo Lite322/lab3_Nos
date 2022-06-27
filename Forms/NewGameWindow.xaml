@@ -5,26 +5,27 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:lab3_Nos.Forms"
         mc:Ignorable="d"
-        Title="Новая игра" Height="450" Width="800">
+        Title="Новая игра" Height="450" Width="800"
+        Background="#421d63">
     <Grid>
         <StackPanel>
 
             <StackPanel Orientation="Horizontal">
-                <Label Foreground="Red" Margin="5">Укажите имя игрока</Label>
+                <Label Foreground="#db768c" Margin="5">Укажите имя игрока</Label>
                 <TextBox Name="tbName" Width="150" Margin="5"/>
             </StackPanel>
 
             <StackPanel Orientation="Horizontal">
-                <Label Foreground="Red" Margin="5">Укажите возраст</Label>
+                <Label Foreground="#db768c" Margin="5">Укажите возраст</Label>
                 <TextBox Name="tbAge" Width="150" Margin="5"/>
             </StackPanel>
 
             <StackPanel Orientation="Horizontal">
-                <Label Foreground="Red" Margin="5">Выберете пол</Label>
-                <ComboBox Background="Red" Name="cbGender" Width="150" Margin="5"/>
+                <Label Foreground="#db768c" Margin="5">Выберете пол</Label>
+                <ComboBox Background="#db768c" Name="cbGender" Width="150" Margin="5"/>
             </StackPanel>
 
-            <Button Background="Red" x:Name="btCreateGame" Margin="20" Click="btCreateGame_Click">Создать</Button>
+            <Button Background="#db768c" x:Name="btCreateGame" Margin="20" Click="btCreateGame_Click">Создать</Button>
 
         </StackPanel>
     </Grid>
